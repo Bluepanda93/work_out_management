@@ -49,11 +49,11 @@ An application that tracks daily or weekly workouts. Purpose is to keep track of
 
 **_Component Hierarchy Diagram:_**
 
-![Component Hierarchy Diagram](https://lucid.app/lucidchart/6e624218-a7ea-4fc5-a071-6c6635c36f35/edit?invitationId=inv_a8ddee70-1cc0-4a3a-a34c-3ebc680841f2&page=0_0#)
+[Component Hierarchy Diagram](https://lucid.app/lucidchart/6e624218-a7ea-4fc5-a071-6c6635c36f35/edit?invitationId=inv_a8ddee70-1cc0-4a3a-a34c-3ebc680841f2&page=0_0#)
 
 **_Entity Relationship Diagram:_**
 
-## ![Entity Relationship Diagram](https://app.diagrams.net/)
+[Entity Relationship Diagram](https://app.diagrams.net/)
 
 ---
 
