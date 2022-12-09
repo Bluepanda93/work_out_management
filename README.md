@@ -1,7 +1,5 @@
 # work_out_management
 
-# Ride or Die: Themepark Edition
-
 ![Work_out_management](https://i0.wp.com/post.greatist.com/wp-content/uploads/sites/2/2022/04/GRT-242654-Home-Workout-No-Equipments.png?w=1155&h=1528)
 
 ## Deployed Site: [Heroku]
