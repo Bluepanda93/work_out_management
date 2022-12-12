@@ -2,18 +2,28 @@ import { useState, useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import axios from 'axios'
 
-const WorkCard = (props) => {
-   return (
+const WorkCard = () => {
+  const [work, setWork] = useState([])
+  let {id} = useParams()
+
+  useEffect(()=>{
+    const apiCall = async () => {
+      let response = await axios.get(`http://localhost:3001/work-out/${id}`)
+      setWork(response.data)
+    }
+    apiCall()
+  }, [])
+  return (
     <div>
-      <h2>{props.workout?.exercise}</h2>
+      <h2>{workout?.exercise}</h2>
 
         <div className="info">
-          <p className="desc">{props.workout?.numberOfSets}</p>
+          <p className="desc">{workout?.numberOfSets}</p>
           <div>
 
             {/* <button
               className="btn danger"
-              onClick={() => props.deletePark(props.park._id)}
+              onClick={() => .deletePark(.park._id)}
             >
               Delete
             </button> */}
