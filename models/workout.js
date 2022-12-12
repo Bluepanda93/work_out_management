@@ -1,12 +1,13 @@
 const { Schema } = require('mongoose')
 
-const Ride = new Schema(
+const Workout = new Schema(
   {
     exercise: { type: String, required: true },
-    numberOfSets: { type: String, required: true },
-    themeParkId: { type: Schema.Types.ObjectId, ref: 'ThemePark' }
+    numberOfSets: { type: Number, required: true },
+    numberOfReps: { type: Number, required: true },
+    userId: { type: Schema.Types.ObjectId, ref: 'User' }
   },
   { timestamps: true }
 )
 
-module.exports = Ride
+module.exports = Workout
