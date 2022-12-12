@@ -21,4 +21,4 @@ const CreateWorkoutForm = (props) => {
     let newWorkout = await axios.post(`${BASE_URL}/add/work-out`, formState)
 
 
-export default CreateRideForm
+export default CreateWorkoutForm
