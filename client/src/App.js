@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import NavBar from './components/NavBar'
 import Home from './components/Home'
 import CreateWorkoutForm from './components/CreateWorkoutForm'
+import Workouts from './components/Workouts'
 import './App.css'
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             path="/add/work-out"
             element={<CreateWorkoutForm resetScrollPos={resetScrollPos} />}
           />
+          <Route path="/work-outs" element={<Workouts />} />
         </Routes>
       </main>
     </div>

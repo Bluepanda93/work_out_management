@@ -26,7 +26,7 @@ const CreateWorkoutForm = (props) => {
       numberOfReps: ''
     })
 
-    navigate(`/work-out/${newWorkout.data._id}`)
+    navigate(`/work-outs/${newWorkout.data._id}`)
   }
 
   useEffect(() => {
