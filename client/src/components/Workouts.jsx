@@ -28,7 +28,12 @@ const Workouts = (props) => {
       <h1>Completed Workouts</h1>
 
       {workouts.map((work) => (
-        <WorkCard key={work._id} work={work} deleteWork={deleteWorkout} />
+        <div>
+          <h1>
+            {work.exercise}
+          </h1>
+        </div>
+        // <WorkCard key={work._id} work={work} deleteWork={deleteWorkout} />
       ))}
     </div>
   )
