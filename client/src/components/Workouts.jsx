@@ -1,5 +1,6 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import WorkCard from './WorkCard'
 import { BASE_URL } from '../globals'
 
@@ -23,22 +24,25 @@ const Workouts = () => {
     getWorkouts()
   }, [deleteAWorkout])
 
+  let navigate = useNavigate()
+
+  const getWorkoutDetails = (id) => {
+    navigate(`${id}`)
+  }
+
   return (
     <div>
       <h1>Completed Workouts</h1>
 
       {workouts.map((work) => (
-        <div>
-          <WorkCard deleteWork={deleteWorkout} />
-          <h1>
-            {work.exercise}
-          </h1>
-          <h1>
-            {work.numberOfSets}
-          </h1>
-          <h1>
-            {work.numberOfReps}
-          </h1>
+        <div
+          key={work.id}
+          className="bigspace">
+          {/* <WorkCard deleteWork={deleteWorkout} /> */}
+          <h1>{work.exercise}</h1>
+          <h1>{work.numberOfSets}</h1>
+          <h1>{work.numberOfReps}</h1>
+          <h2 onClick={() => getWorkoutDetails(work._id)}>View Workout</h2>
         </div>
       ))}
     </div>

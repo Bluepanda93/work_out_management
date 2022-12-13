@@ -19,12 +19,8 @@ const WorkCard = () => {
         <h1>
           {work.exercise}
         </h1>
+        <h1>{work.numberOfSets}</h1>
       </section>
-      <div className="inputs">
-            <Link className="btn" to={`/work-outs/${id}`}>
-              View
-            </Link>
-            </div>
       {/* <h2>{workout?.exercise}</h2>
 
         <div className="info">
