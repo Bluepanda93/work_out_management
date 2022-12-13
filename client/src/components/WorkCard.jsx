@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import axios from 'axios'
 
 const WorkCard = () => {
@@ -20,6 +20,11 @@ const WorkCard = () => {
           {work.exercise}
         </h1>
       </section>
+      <div className="inputs">
+            <Link className="btn" to={`/work-outs/${id}`}>
+              View
+            </Link>
+            </div>
       {/* <h2>{workout?.exercise}</h2>
 
         <div className="info">

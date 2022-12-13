@@ -3,12 +3,12 @@ import { useEffect, useState } from 'react'
 import WorkCard from './WorkCard'
 import { BASE_URL } from '../globals'
 
-const Workouts = (props) => {
+const Workouts = () => {
   const [workouts, setWorkouts] = useState([])
   const [deleteAWorkout, setDeletedWorkout] = useState(false)
 
   const deleteWorkout = async (id) => {
-    let deleteCard = await axios.delete(`${BASE_URL}/work-outs/${id}`)
+    let deleteCard = await axios.delete(`${BASE_URL}/work-out/${id}`)
     setDeletedWorkout(!deleteAWorkout)
   }
 
@@ -29,6 +29,7 @@ const Workouts = (props) => {
 
       {workouts.map((work) => (
         <div>
+          <WorkCard deleteWork={deleteWorkout} />
           <h1>
             {work.exercise}
           </h1>
@@ -36,10 +37,9 @@ const Workouts = (props) => {
             {work.numberOfSets}
           </h1>
           <h1>
-            Number of Reps {work.numberOfReps}
+            {work.numberOfReps}
           </h1>
         </div>
-        // <WorkCard key={work._id} work={work} deleteWork={deleteWorkout} />
       ))}
     </div>
   )
