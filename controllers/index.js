@@ -74,5 +74,6 @@ module.exports = {
   getWorkoutById,
   deleteWorkoutById,
   getAllUsers,
-  addNewUser
+  addNewUser,
+  updateWorkoutById
 }
