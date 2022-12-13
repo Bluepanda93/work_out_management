@@ -34,7 +34,7 @@ const updateWorkoutById = async (req, res) => {
     const { id } = req.params
     const update = await Workout.findByIdAndUpdate(id)
     return res.status(200).json(update)
-  } catch (error) {
+  } catch (e) {
     return res.status(500).send(error.message)
   }
 }
