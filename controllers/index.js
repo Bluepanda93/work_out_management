@@ -31,10 +31,11 @@ const getWorkoutById = async (req, res) => {
 
 const updateWorkoutById = async (req, res) => {
   try {
-    const { id } = req.params
-    const update = await Workout.findByIdAndUpdate(id)
-    return res.status(200).json(update)
-  } catch (e) {
+    const update = await Workout.findByIdAndUpdate(req.params.id, req.body, {
+      new: true
+    })
+    res.status(200).json(update)
+  } catch (error) {
     return res.status(500).send(error.message)
   }
 }
