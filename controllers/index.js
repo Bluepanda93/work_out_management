@@ -29,6 +29,26 @@ const getWorkoutById = async (req, res) => {
   }
 }
 
+const updateWorkoutById = async (req, res) => {
+  try {
+    const { id } = req.params
+    const update = await Workout.findByIdAndUpdate(id)
+    return res.status(200).json(update)
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
+const deleteWorkoutById = async (req, res) => {
+  try {
+    const { id } = req.params
+    const workout = await Workout.findByIdAndDelete(id)
+    return res.status(200).json(workout)
+  } catch (e) {
+    return res.status(500).json(e.message)
+  }
+}
+
 const getAllUsers = async (req, res) => {
   try {
     const users = await User.find({})
@@ -52,6 +72,7 @@ module.exports = {
   getAllWorkouts,
   addNewWorkout,
   getWorkoutById,
+  deleteWorkoutById,
   getAllUsers,
   addNewUser
 }

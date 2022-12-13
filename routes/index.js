@@ -10,6 +10,8 @@ router.post('/add/work-out', controllers.addNewWorkout)
 
 router.get('/work-out/:id', controllers.getWorkoutById)
 
+router.delete('/work-out/:id', controllers.deleteWorkoutById)
+
 router.get('/users', controllers.getAllUsers)
 
 router.post('/add/user', controllers.addNewUser)
