@@ -32,6 +32,12 @@ const Workouts = (props) => {
           <h1>
             {work.exercise}
           </h1>
+          <h1>
+            {work.numberOfSets}
+          </h1>
+          <h1>
+            Number of Reps {work.numberOfReps}
+          </h1>
         </div>
         // <WorkCard key={work._id} work={work} deleteWork={deleteWorkout} />
       ))}

@@ -4,6 +4,7 @@ import Home from './components/Home'
 import CreateWorkoutForm from './components/CreateWorkoutForm'
 import Workouts from './components/Workouts'
 import './App.css'
+import WorkCard from './components/WorkCard'
 
 function App() {
   const resetScrollPos = () => {
@@ -23,6 +24,7 @@ function App() {
             element={<CreateWorkoutForm resetScrollPos={resetScrollPos} />}
           />
           <Route path="/work-outs" element={<Workouts />} />
+          <Route path="/work-outs/:id" element={<WorkCard />} />
         </Routes>
       </main>
     </div>

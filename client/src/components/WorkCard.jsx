@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import axios from 'axios'
 
 const WorkCard = () => {
@@ -15,20 +15,25 @@ const WorkCard = () => {
   }, [])
   return (
     <div>
-      <h2>{workout?.exercise}</h2>
+      <section>
+        <h1>
+          {work.exercise}
+        </h1>
+      </section>
+      {/* <h2>{workout?.exercise}</h2>
 
         <div className="info">
           <p className="desc">{workout?.numberOfSets}</p>
           <div>
 
-            {/* <button
+            <button
               className="btn danger"
               onClick={() => .deletePark(.park._id)}
             >
               Delete
-            </button> */}
+            </button>
           </div>
-        </div>
+        </div> */}
       </div>
   )
 }
