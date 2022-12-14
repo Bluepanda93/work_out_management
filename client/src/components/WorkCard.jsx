@@ -61,10 +61,10 @@ const WorkCard = () => {
         <input id="numberOfSets" value={form.numberOfSets} onChange={handleChange} />
         <label>Number Of Reps</label>
         <input id="numberOfReps" value={form.numberOfReps} onChange={handleChange} />
-        <button type="submit">Update Workout</button>
+        <button className="btn" type="submit">Update Workout</button>
       </form>
-      <button onClick={deleteWorkout}>Delete</button>
-      <button onClick={() => navigate('/work-outs')}>Back</button>
+      <button onClick={deleteWorkout} className="btn">Delete</button>
+      <button onClick={() => navigate('/work-outs')} className="btn">Back</button>
       </div>
   )
 }
