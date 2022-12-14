@@ -52,7 +52,7 @@ const deleteWorkoutById = async (req, res) => {
 const deleteUserById = async (req, res) => {
   try {
     const { id } = req.params
-    const user = await Workout.findByIdAndDelete(id)
+    const user = await User.findByIdAndDelete(id)
     return res.status(200).json(user)
   } catch (e) {
     return res.status(500).json(e.message)

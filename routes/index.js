@@ -14,6 +14,8 @@ router.put('/work-out/:id', controllers.updateWorkoutById)
 
 router.delete('/work-out/:id', controllers.deleteWorkoutById)
 
+router.delete('/user/:id', controllers.deleteWorkoutById)
+
 router.get('/users', controllers.getAllUsers)
 
 router.post('/add/user', controllers.addNewUser)
