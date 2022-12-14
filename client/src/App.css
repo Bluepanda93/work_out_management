@@ -91,4 +91,6 @@ form input:focus {
   background-color: #8e602e;
   cursor: pointer;
   transition: all 0.2s;
+  align-items: center;
+  margin: auto
 }

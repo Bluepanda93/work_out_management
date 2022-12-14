@@ -49,7 +49,7 @@ const WorkCard = () => {
 
   return (
     <div>
-      <section>
+      <section className='bigspace'>
         <h1>{work.exercise}</h1>
         <h1>{work.numberOfSets}</h1>
         <h1>{work.numberOfReps}</h1>
