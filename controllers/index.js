@@ -49,6 +49,15 @@ const deleteWorkoutById = async (req, res) => {
     return res.status(500).json(e.message)
   }
 }
+const deleteUserById = async (req, res) => {
+  try {
+    const { id } = req.params
+    const user = await Workout.findByIdAndDelete(id)
+    return res.status(200).json(user)
+  } catch (e) {
+    return res.status(500).json(e.message)
+  }
+}
 
 const getAllUsers = async (req, res) => {
   try {
@@ -76,5 +85,6 @@ module.exports = {
   deleteWorkoutById,
   getAllUsers,
   addNewUser,
+  deleteUserById,
   updateWorkoutById
 }
