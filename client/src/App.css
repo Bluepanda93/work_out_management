@@ -22,6 +22,10 @@ a:hover,
   color: black;
 }
 
+body {
+  background-color: #90AA86;
+}
+
 .logo {
   display: flex;
   justify-content: center;
