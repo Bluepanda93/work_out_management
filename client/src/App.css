@@ -32,6 +32,12 @@ h1 {
   justify-content: center;
 }
 
+h2 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
 .logo {
   display: flex;
   justify-content: center;
@@ -76,4 +82,13 @@ form input {
 form input:focus {
   border-color: #F95738;
   color: #489FB5;
+}
+
+.bigspace {
+  max-width: 300px;
+  max-height: 380px;
+  border-radius: 4px;
+  background-color: #8e602e;
+  cursor: pointer;
+  transition: all 0.2s;
 }
