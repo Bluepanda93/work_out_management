@@ -22,3 +22,10 @@ a:hover,
   align-items: center;
   margin: auto
 }
+
+.btn {
+  background-color: #489FB5;
+  color: black;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
