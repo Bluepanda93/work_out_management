@@ -6,7 +6,7 @@ a:hover,
 
 .nav-bar {
   padding: 3rem 0;
-  background-color: #b2b6a5;
+  background-color: #90AA86;
   display: flex;
   justify-content: space-evenly;
   text-decoration: none;
@@ -30,7 +30,7 @@ a:hover,
 }
 
 .btn {
-  background-color: #bad5be;
+  background-color: #577590;
   color: black;
   padding: 0.5rem 1rem;
   display: inline-block;
@@ -61,4 +61,9 @@ form input {
   color: white;
   border-bottom: 2px solid #515867;
   transition: all 0.3s ease;
+}
+
+form input:focus {
+  border-color: #F95738;
+  color: #489FB5;
 }
