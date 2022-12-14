@@ -26,6 +26,12 @@ body {
   background-color: #90AA86;
 }
 
+h1 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
 .logo {
   display: flex;
   justify-content: center;
