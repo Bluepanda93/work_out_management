@@ -9,7 +9,16 @@ a:hover,
   background-color: #489FB5;
   display: flex;
   justify-content: space-evenly;
-  font-size: 1em;
+  text-decoration: none;
+  position: relative;
+  /* padding-left: 40px; */
+  /* margin-left: 0.5em; */
+  /* margin-right: 1em; */
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+  
 }
 
 .nav-bar a {
