@@ -52,7 +52,7 @@ const CreateWorkoutForm = (props) => {
           id="numberOfSets"
           value={formState.numberOfSets}
           onChange={handleChange}
-          placeholder="number Of Sets"
+          placeholder="Number of Sets"
           required
         />
 
@@ -62,7 +62,7 @@ const CreateWorkoutForm = (props) => {
           id="numberOfReps"
           value={formState.numberOfReps}
           onChange={handleChange}
-          placeholder="number Of Reps"
+          placeholder="Number of Reps"
           required
         />
 

@@ -88,7 +88,7 @@ form input {
   border-radius: 10px;
   background-color: transparent;
   border: none;
-  color: white;
+  color: rgb(77, 54, 54);
   border-bottom: 2px solid #515867;
   transition: all 0.3s ease;
 }

@@ -56,11 +56,11 @@ const WorkCard = () => {
       </section>
       <form onSubmit={updateWorkout}>
         <label>Exercise</label>
-        <input id="exercise" value={form.exercise} onChange={handleChange} />
+        <input id="exercise" value={form.exercise} onChange={handleChange} placeholder="Name" required/>
         <label>Number Of Sets</label>
-        <input type="number" id="numberOfSets" value={form.numberOfSets} onChange={handleChange} />
+        <input type="number" id="numberOfSets" value={form.numberOfSets} onChange={handleChange} placeholder="Number of Sets" required/>
         <label>Number Of Reps</label>
-        <input type="number" id="numberOfReps" value={form.numberOfReps} onChange={handleChange} />
+        <input type="number" id="numberOfReps" value={form.numberOfReps} onChange={handleChange} placeholder="Number of Reps" required/>
         <button className="btn" type="submit">Update Workout</button>
       </form>
       <button onClick={deleteWorkout} className="btn">Delete</button>
