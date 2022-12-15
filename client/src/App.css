@@ -102,7 +102,7 @@ form input:focus {
   max-width: 350px;
   min-width: 200px;
   max-height: 380px;
-  border-color: black;
+  border: 2px solid black;
   border-radius: 4px;
   background-color: #f18a4ad5;
   cursor: pointer;

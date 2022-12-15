@@ -35,7 +35,7 @@ const Workouts = () => {
           <h1>{work.exercise}</h1>
           <h1>{work.numberOfSets}</h1>
           <h1>{work.numberOfReps}</h1>
-          <h2 onClick={() => getWorkoutDetails(work._id)}>View Workout</h2>
+          <button onClick={() => getWorkoutDetails(work._id)} className="btn">View Workout</button>
         </div>
       ))}
       </div>

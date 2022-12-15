@@ -27,12 +27,7 @@ An application that tracks daily or weekly workouts. Purpose is to keep track of
 
 ![ERD](/screenshots/Screen%20Shot%202022-12-08%20at%2010.18.42%20AM.png)
 ![Hierarchy](/screenshots/Screen%20Shot%202022-12-08%20at%2010.19.59%20AM.png)
-
-#### Home Page
-
-![Home Page]
-
----
+![FormPage](/screenshots/Screen%20Shot%202022-12-08%20at%2011.27.17%20AM.png)
 
 ## Technologies Used
 
@@ -58,6 +53,7 @@ An application that tracks daily or weekly workouts. Purpose is to keep track of
 ## Additional Links
 
 - [Trello](https://trello.com/b/DPnZRE4E/workout-management)
+- [Heroku](https://work-out-management.herokuapp.com/)
 
 ---
 
