@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Cinzel&family=DM+Sans&family=Fuzzy+Bubbles&family=Indie+Flower&family=Kolker+Brush&family=Lora&family=Maven+Pro&family=Poiret+One&family=Roboto:wght@900&family=Signika+Negative:wght@300&display=swap');
 
 a:hover,
-.nav-bar a:hover {
+.nav-bar a:hover,
+.btn:hover {
   color: #F0F0F0;
   font-size: 1.15em;
 }
