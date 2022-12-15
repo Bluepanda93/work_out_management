@@ -1,7 +1,5 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
-// import { useNavigate } from 'react-router-dom'
-// import WorkCard from './WorkCard'
 import { BASE_URL } from '../globals'
 
 const Users = () => {
@@ -14,7 +12,7 @@ const Users = () => {
       setUser(res.data)
     }
 
-    // props.resetScrollPos()
+
     getUsers()
   }, [])
 
@@ -28,7 +26,6 @@ const Users = () => {
           className="bigspace">
           <h1>{user.firstName}</h1>
           <h1>{user.lastName}</h1>
-          {/* <h2 onClick={() => getWorkoutDetails(user._id)}>View Workout</h2> */}
         </div>
       ))}
     </div>

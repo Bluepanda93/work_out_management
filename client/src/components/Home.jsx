@@ -1,6 +1,3 @@
-// import '../index.css'
-// import { useEffect } from 'react'
-// import { Link } from 'react-router-dom'
 
 const Home = () => {
 

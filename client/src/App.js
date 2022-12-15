@@ -7,6 +7,8 @@ import CreateUserForm from './components/CreateUserForm'
 import Workouts from './components/Workouts'
 import Users from './components/user'
 import WorkCard from './components/WorkCard'
+import CreateCommentForm from './components/CreateComments'
+import Comments from './components/Comments'
 
 function App() {
   const resetScrollPos = () => {
@@ -32,6 +34,11 @@ function App() {
           <Route path="/work-outs" element={<Workouts />} />
           <Route path="/user" element={<Users />} />
           <Route path="/work-outs/:id" element={<WorkCard />} />
+          <Route path="/comments" element={<Comments />} />
+          <Route
+            path="/add/comment"
+            element={<CreateCommentForm resetScrollPos={resetScrollPos} />}
+          />
         </Routes>
       </main>
     </div>

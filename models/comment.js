@@ -1,11 +1,11 @@
 const { Schema } = require('mongoose')
 
-const Comments = new Schema(
+const Comment = new Schema(
   {
     name: { type: String, required: true },
-    body: { type: Number, required: true }
+    body: { type: String, required: true }
   },
   { timestamps: true }
 )
 
-module.exports = Comments
+module.exports = Comment

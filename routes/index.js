@@ -20,4 +20,8 @@ router.get('/users', controllers.getAllUsers)
 
 router.post('/add/user', controllers.addNewUser)
 
+router.get('/comments', controllers.getAllComments)
+
+router.post('/add/comment', controllers.addNewComment)
+
 module.exports = router

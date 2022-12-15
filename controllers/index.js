@@ -1,4 +1,4 @@
-const { Workout, User } = require('../models')
+const { Comment, Workout, User } = require('../models')
 
 const getAllWorkouts = async (req, res) => {
   try {
@@ -79,6 +79,25 @@ const addNewUser = async (req, res) => {
   }
 }
 
+const getAllComments = async (req, res) => {
+  try {
+    const comments = await Comment.find({})
+    return res.status(200).json(comments)
+  } catch (e) {
+    return res.status(500).json(e.message)
+  }
+}
+
+const addNewComment = async (req, res) => {
+  try {
+    const comment = await new Comment(req.body)
+    await comment.save()
+    return res.status(201).json(comment)
+  } catch (e) {
+    return res.status(500).json(e.message)
+  }
+}
+
 module.exports = {
   getAllWorkouts,
   addNewWorkout,
@@ -87,5 +106,7 @@ module.exports = {
   getAllUsers,
   addNewUser,
   deleteUserById,
-  updateWorkoutById
+  updateWorkoutById,
+  addNewComment,
+  getAllComments
 }
