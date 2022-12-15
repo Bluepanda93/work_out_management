@@ -99,11 +99,12 @@ form input:focus {
 }
 
 .bigspace {
-  max-width: 300px;
+  max-width: 350px;
+  min-width: 200px;
   max-height: 380px;
   border-color: black;
   border-radius: 4px;
-  background-color: #8e602e;
+  background-color: #f18a4ad5;
   cursor: pointer;
   transition: all 0.2s;
   align-items: center;
@@ -116,4 +117,10 @@ form input:focus {
   display: flex;
   position: relative;
   justify-content: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }

@@ -27,7 +27,7 @@ const Workouts = () => {
   return (
     <div>
       <h1>Completed Workouts</h1>
-
+      <div className='container'>
       {workouts.map((work) => (
         <div
           key={work.id}
@@ -38,6 +38,7 @@ const Workouts = () => {
           <h2 onClick={() => getWorkoutDetails(work._id)}>View Workout</h2>
         </div>
       ))}
+      </div>
     </div>
   )
 }
