@@ -4,6 +4,8 @@
 
 ## Deployed Site: [Heroku]
 
+- [Heroku](https://work-out-management.herokuapp.com/)
+
 ---
 
 ## Description
@@ -53,7 +55,6 @@ An application that tracks daily or weekly workouts. Purpose is to keep track of
 ## Additional Links
 
 - [Trello](https://trello.com/b/DPnZRE4E/workout-management)
-- [Heroku](https://work-out-management.herokuapp.com/)
 
 ---
 
